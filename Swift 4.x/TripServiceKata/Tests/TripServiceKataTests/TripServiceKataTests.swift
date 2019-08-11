@@ -2,9 +2,9 @@ import XCTest
 @testable import TripServiceKata
 
 class TripServiceKataTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssertTrue(true)
+    func test_throws_user_not_logged_in_if_user_is_a_guest() {
+        let tripService = TestableTripService()
+        let BOB = User()
+        XCTAssertThrowsError(try tripService.getTripsByUser(BOB))
     }
 }

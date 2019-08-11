@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		10A077D92300A17400511217 /* TestableTripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A077D82300A17400511217 /* TestableTripService.swift */; };
 		OBJ_26 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_32 /* TripServiceKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* TripServiceKataTests.swift */; };
 		OBJ_34 /* TripServiceKata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TripServiceKata::TripServiceKata::Product" /* TripServiceKata.framework */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10A077D82300A17400511217 /* TestableTripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableTripService.swift; sourceTree = "<group>"; };
 		OBJ_10 /* TripDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDAO.swift; sourceTree = "<group>"; };
 		OBJ_11 /* TripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripService.swift; sourceTree = "<group>"; };
 		OBJ_12 /* TripServiceKataErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripServiceKataErrorType.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_17 /* TripServiceKataTests.swift */,
+				10A077D82300A17400511217 /* TestableTripService.swift */,
 			);
 			name = TripServiceKataTests;
 			path = Tests/TripServiceKataTests;
@@ -107,7 +110,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -115,7 +118,6 @@
 				OBJ_15 /* Tests */,
 				OBJ_18 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -203,9 +205,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				10A077D92300A17400511217 /* TestableTripService.swift in Sources */,
 				OBJ_32 /* TripServiceKataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
