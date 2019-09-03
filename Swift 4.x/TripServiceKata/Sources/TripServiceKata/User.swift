@@ -32,6 +32,6 @@ class User : Equatable
     
     func isFriendWith(_ friend:User) -> Bool
     {
-        return false
+        return friends.contains(friend)
     }
 }

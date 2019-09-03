@@ -10,4 +10,10 @@ class UserTests: XCTestCase {
         user.addFriend(BOB)
         XCTAssertFalse(user.isFriendWith(TOM))
     }
+    
+    func test_true_is_returned_if_user_does_contain_friend() {
+        let user = User()
+        user.addFriend(BOB)
+        XCTAssertTrue(user.isFriendWith(BOB))
+    }
 }
