@@ -6,11 +6,10 @@ class TripService {
             throw TripServiceErrorType.userNotLoggedIn
         }
         
-        var tripList:[Trip]? = nil
         if user.isFriendWith(loggedUser) {
-            tripList = findTrip(user)
+            return findTrip(user)
         }
-        return tripList
+        return nil
     }
     
     func getLoggedUser() -> User? {
