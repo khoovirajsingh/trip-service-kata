@@ -2,8 +2,7 @@ import Foundation
 
 class TripService {
     func getTripsByUser(_ user:User) throws -> [Trip]? {
-        let loggedUser = getLoggedUser()
-        if (loggedUser == nil) {
+        guard let loggedUser = getLoggedUser() else {
             throw TripServiceErrorType.userNotLoggedIn
         }
         
