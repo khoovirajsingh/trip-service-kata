@@ -9,7 +9,7 @@ class TripService {
         if user.isFriendWith(loggedUser) {
             return findTrip(user)
         }
-        return nil
+        return noTrips()
     }
     
     func getLoggedUser() -> User? {
@@ -18,5 +18,9 @@ class TripService {
     
     func findTrip(_ user: User) -> [Trip]? {
         return try! TripDAO.findTripsByUser(user)
+    }
+    
+    private func noTrips() -> [Trip]? {
+        return nil
     }
 }
