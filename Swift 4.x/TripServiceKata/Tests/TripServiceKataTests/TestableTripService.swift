@@ -5,4 +5,8 @@ class TestableTripService: TripService {
     override func getLoggedUser() -> User? {
         return loggedUser
     }
+    
+    override func findTrip(_ user: User) -> [Trip]? {
+        return []
+    }
 }

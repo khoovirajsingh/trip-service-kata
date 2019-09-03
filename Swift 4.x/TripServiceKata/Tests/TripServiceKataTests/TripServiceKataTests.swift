@@ -23,4 +23,18 @@ class TripServiceKataTests: XCTestCase {
         
         XCTAssertNil(trips)
     }
+    
+    func test_a_list_of_trips_is_returned_if_logged_in_user_is_a_friend() throws {
+        tripService.loggedUser = user
+        
+        let aFriend = User()
+        aFriend.addTrip(Trip())
+        
+        aFriend.addFriend(user)
+        
+        let trips = try tripService.getTripsByUser(aFriend)
+
+        XCTAssertNotNil(trips)
+        
+    }
 }
