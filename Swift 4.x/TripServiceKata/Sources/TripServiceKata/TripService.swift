@@ -6,10 +6,8 @@ class TripService {
             throw TripServiceErrorType.userNotLoggedIn
         }
         
-        let isFriend = user.isFriendWith(loggedUser)
-        
         var tripList:[Trip]? = nil
-        if isFriend {
+        if user.isFriendWith(loggedUser) {
             tripList = findTrip(user)
         }
         return tripList
