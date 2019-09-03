@@ -29,4 +29,9 @@ class User : Equatable
     {
         self.userTrips.append(trip)
     }
+    
+    func isFriendWith(_ friend:User) -> Bool
+    {
+        return false
+    }
 }

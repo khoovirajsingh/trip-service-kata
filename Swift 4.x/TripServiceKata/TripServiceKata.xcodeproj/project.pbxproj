@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1093AD7A231EF44600F70079 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1093AD79231EF44600F70079 /* UserTests.swift */; };
 		10A077D92300A17400511217 /* TestableTripService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A077D82300A17400511217 /* TestableTripService.swift */; };
 		OBJ_26 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_32 /* TripServiceKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* TripServiceKataTests.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1093AD79231EF44600F70079 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		10A077D82300A17400511217 /* TestableTripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestableTripService.swift; sourceTree = "<group>"; };
 		OBJ_10 /* TripDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDAO.swift; sourceTree = "<group>"; };
 		OBJ_11 /* TripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripService.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				OBJ_17 /* TripServiceKataTests.swift */,
 				10A077D82300A17400511217 /* TestableTripService.swift */,
+				1093AD79231EF44600F70079 /* UserTests.swift */,
 			);
 			name = TripServiceKataTests;
 			path = Tests/TripServiceKataTests;
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				1093AD7A231EF44600F70079 /* UserTests.swift in Sources */,
 				10A077D92300A17400511217 /* TestableTripService.swift in Sources */,
 				OBJ_32 /* TripServiceKataTests.swift in Sources */,
 			);
