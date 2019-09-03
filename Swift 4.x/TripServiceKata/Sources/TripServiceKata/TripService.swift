@@ -2,14 +2,12 @@ import Foundation
 
 class TripService {
     func getTripsByUser(_ user:User) throws -> [Trip]? {
-        var tripList:[Trip]? = nil
         let loggedUser = getLoggedUser()
-        var isFriend = false
-        
         if (loggedUser == nil) {
             throw TripServiceErrorType.userNotLoggedIn
         }
         
+        var isFriend = false
         for friend in user.getFriends() {
             if friend == loggedUser {
                 isFriend = true
@@ -17,6 +15,7 @@ class TripService {
             }
         }
         
+        var tripList:[Trip]? = nil
         if isFriend {
             tripList = findTrip(user)
         }
